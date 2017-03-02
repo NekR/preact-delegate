@@ -13,9 +13,10 @@ npm install preact-delegate --save-dev
 Just wrap your root element from where to capture events with `DelegateContainer` and then wrap individual elements which should receive events with `DelegateElement`. See example:
 
 ```js
+import { Component } from 'preact';
 import { DelegateContainer, DelegateElement } from 'preact-delegate';
 
-class MyComponent extends preact.Component {
+class MyComponent extends Component {
   constructor(...args) {
     super(...args);
 
@@ -40,6 +41,6 @@ class MyComponent extends preact.Component {
 }
 ```
 
-# LICENSE
+## LICENSE
 
 [MIT](LICEMSE.md)

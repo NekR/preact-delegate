@@ -2,6 +2,12 @@
 
 Delegate DOM events with Preact (since Preact doesn't do that by default)
 
+## Install
+
+```sh
+npm install preact-delegate --save-dev
+```
+
 ## Usage
 
 Just wrap your root element from where to capture events with `DelegateContainer` and then wrap individual elements which should receive events with `DelegateElement`. See example:

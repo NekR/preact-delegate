@@ -1,6 +1,6 @@
 # preact-delegate
 
-Delegate DOM events with Preact (since Preact doesn't do that by default)
+Delegate DOM events with Preact (since Preact doesn't do that by default).
 
 ## Install
 

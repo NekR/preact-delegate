@@ -65,11 +65,16 @@ export default class DelegateContainer extends Component {
         return;
       }
 
-      const index = items.findIndex(item => {
-        return (item.base === base /*&& item.handler === handler*/);
+      let index = -1;
+
+      items.some((item, i) => {
+        if (item.base === base /*&& item.handler === handler*/) {
+          index = i;
+          return true;
+        }
       });
 
-      if (!index !== -1) {
+      if (index !== -1) {
         items.splice(index, 1);
       }
 
